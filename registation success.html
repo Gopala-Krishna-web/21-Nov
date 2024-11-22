@@ -19,8 +19,9 @@
                     register>
             </center><br>
             <center><label for="password">password</label>
-                <input type="text" name="password" id="password" placeholder="password" required pattern="[/da-zA-Z]*"
-                    Register>
+                <input type="text" name="password" id="password" placeholder="password" required
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&*]).{8,16}" minlength="8" maxlength="16"
+                    title="please enter min 8 and max16"><br><br>
             </center><br>
             <center><button>login</button></center>
         </form>
